@@ -446,6 +446,37 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: dana-medium;
+
+  font-style: normal;
+
+  src: url(../public/assets/font/Dana-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: dana-bold;
+
+  font-style: normal;
+
+  src: url(../public/assets/font/Dana-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: dana-black;
+
+  font-style: normal;
+
+  src: url(../public/assets/font/Dana-Black.woff) format("woff");
+}
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: dana-medium;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -554,54 +585,97 @@ video {
   --tw-contain-style:  ;
 }
 
-.visible {
-  visibility: visible;
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.collapse {
-  visibility: collapse;
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
 }
 
-.relative {
-  position: relative;
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 
-.block {
-  display: block;
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
 }
 
-.table {
-  display: table;
+@media (min-width: 1140px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
-.contents {
-  display: contents;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.hidden {
-  display: none;
+.flex {
+  display: flex;
 }
 
-.border-collapse {
-  border-collapse: collapse;
+.h-9 {
+  height: 2.25rem;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.h-8 {
+  height: 2rem;
 }
 
-.resize {
-  resize: both;
+.h-12 {
+  height: 3rem;
 }
 
-.border {
-  border-width: 1px;
+.h-1 {
+  height: 0.25rem;
 }
 
-.underline {
-  text-decoration-line: underline;
+.h-16 {
+  height: 4rem;
 }
 
-.outline {
-  outline-style: solid;
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }

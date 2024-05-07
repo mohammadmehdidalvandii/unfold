@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: dana-medium;
+        font-style: normal;
+        src: url(../public/assets/font/Dana-Medium.woff) format("woff");
+    }
+    @font-face {
+        font-family: dana-bold;
+        font-style: normal;
+        src: url(../public/assets/font/Dana-Bold.woff) format("woff");
+    }
+    @font-face {
+        font-family: dana-black;
+        font-style: normal;
+        src: url(../public/assets/font/Dana-Black.woff) format("woff");
+    }
+    body{
+        @apply m-0 p-0 font-dana-medium box-border
+    }
+}
