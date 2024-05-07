@@ -451,7 +451,7 @@ video {
 
   font-style: normal;
 
-  src: url(../public/assets/font/Dana-Medium.woff) format("woff");
+  src: url('../public/assets/font/Dana-Medium.woff') format("woff");
 }
 
 @font-face {
@@ -459,7 +459,7 @@ video {
 
   font-style: normal;
 
-  src: url(../public/assets/font/Dana-Bold.woff) format("woff");
+  src: url("../public/assets/font/Dana-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -467,7 +467,7 @@ video {
 
   font-style: normal;
 
-  src: url(../public/assets/font/Dana-Black.woff) format("woff");
+  src: url("../public/assets/font/Dana-Black.woff") format("woff");
 }
 
 body {
@@ -615,33 +615,20 @@ body {
   }
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.static {
+  position: static;
+}
+
+.me-8 {
+  margin-inline-end: 2rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
   display: flex;
-}
-
-.h-9 {
-  height: 2.25rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .h-full {
@@ -650,6 +637,10 @@ body {
 
 .w-full {
   width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .items-center {
@@ -665,17 +656,44 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.font-dana-bold {
+  font-family: dana-bold;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-slate-300 {
+  --tw-shadow-color: #cbd5e1;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(106 71 226 / var(--tw-text-opacity));
 }

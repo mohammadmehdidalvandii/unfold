@@ -7,6 +7,9 @@ module.exports = {
           "dana-medium" : "dana-medium",
           "dana-bold" :"dana-bold",
           "dana-black": "dana-black"
+        },
+        colors:{
+          "primary" : "#6A47E2"
         }
     },
     screens: {
