@@ -22,3 +22,9 @@
         @apply m-0 p-0 font-dana-medium box-border
     }
 }
+
+@layer components{
+    .button-primary{
+        @apply flex justify-center items-center bg-primary font-dana-bold font-extrabold text-xl text-white mt-5 py-2  px-3 rounded-2xl ease-linear duration-300 hover:bg-white hover:text-primary hover:border-2 border-primary;
+    }
+}
