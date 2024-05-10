@@ -8,6 +8,7 @@ export function handlerMenuNavbar(){
         navbarIcon.classList.remove("fa-bars")
         navbarIcon.classList.add('fa-times')
         navbarMenu.style.top = "5rem"
+        navbarMenu.style.transition = "0.8s linear"
     } else{
         navbarIcon.classList.remove('fa-times')
         navbarIcon.classList.add("fa-bars")
