@@ -1,86 +1,181 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <<<< link FontAwesome cdn>>>> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- <<<< link style tailwind >>>> -->
-    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/app.css" />
     <title>UNFOLD</title>
-</head>
-<body dir="rtl">
-        <!-- <<<< navbar sections >>>> -->
-            <nav class="hidden lg:block static w-full bg-white h-full py-5 shadow-lg shadow-slate-300">
-                <div class="container">
-                    <div class="flex justify-between items-center">
-                        <ul class="flex items-center">
-                            <li class="me-8  ">
-                                <a href="#" class="font-dana-bold text-xl font-extrabold cursor-pointer  ease-linear duration-200 hover:text-primary">خانه</a>
-                            </li>
-                            <li class="me-8">
-                                <a href="#" class="font-dana-bold text-xl font-extrabold cursor-pointer  ease-linear duration-200 hover:text-primary">درباره ما</a>
-                            </li>
-                            <li class="me-8">
-                                <a href="#" class=" font-dana-bold text-xl font-extrabold cursor-pointer  ease-linear duration-200 hover:text-primary ">خدمات</a>
-                            </li>
-                            <li class="me-8">
-                                <a href="#" class=" font-dana-bold text-xl font-extrabold cursor-pointer  ease-linear duration-200 hover:text-primary ">نمونه کار</a>
-                            </li>
-                            <li class="me-8">
-                                <a href="#" class=" font-dana-bold text-xl font-extrabold cursor-pointer  ease-linear duration-200 hover:text-primary ">پکیج ها</a>
-                            </li>
-                            <li class="me-8">
-                                <a href="#" class=" font-dana-bold text-xl font-extrabold cursor-pointer  ease-linear duration-200 hover:text-primary ">بلاگ</a>
-                            </li>
-                            <li class="me-8">
-                                <a href="#" class=" font-dana-bold text-xl font-extrabold cursor-pointer  ease-linear duration-200 hover:text-primary ">تماس</a>
-                            </li>
-                        </ul>
-                        <img src="/public/assets/image/logo-1.png" alt="navbar logo">
-                    </div>
-                </div>
-            </nav>
-        <!-- <<<< navbar sections >>>> -->
+  </head>
+  <body dir="rtl">
+    <!-- <<<< navbar sections >>>> -->
+    <nav
+      class="hidden lg:block static w-full bg-white h-full py-5 shadow-lg shadow-slate-300"
+    >
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <ul class="flex items-center">
+            <li class="me-8">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold cursor-pointer ease-linear duration-200 hover:text-primary"
+                >خانه</a
+              >
+            </li>
+            <li class="me-8">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold cursor-pointer ease-linear duration-200 hover:text-primary"
+                >درباره ما</a
+              >
+            </li>
+            <li class="me-8">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold cursor-pointer ease-linear duration-200 hover:text-primary"
+                >خدمات</a
+              >
+            </li>
+            <li class="me-8">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold cursor-pointer ease-linear duration-200 hover:text-primary"
+                >نمونه کار</a
+              >
+            </li>
+            <li class="me-8">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold cursor-pointer ease-linear duration-200 hover:text-primary"
+                >پکیج ها</a
+              >
+            </li>
+            <li class="me-8">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold cursor-pointer ease-linear duration-200 hover:text-primary"
+                >بلاگ</a
+              >
+            </li>
+            <li class="me-8">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold cursor-pointer ease-linear duration-200 hover:text-primary"
+                >تماس</a
+              >
+            </li>
+          </ul>
+          <img src="/public/assets/image/logo-1.png" alt="navbar logo" />
+        </div>
+      </div>
+    </nav>
+    <!-- <<<< navbar sections >>>> -->
 
-        <!-- <<<< navbar section Responsive >>>> -->
-            <nav class="block lg:hidden static w-full bg-white h-full py-5 shadow-lg shadow-stone-300">
-                <div class="container">
-                    <div class="flex justify-between items-center relative px-2">
-                            <button id="navbar_btn" class="w-10 h-10 bg-primary text-2xl rounded-lg ">
-                                <i id="navbar_icon" class="fa-solid fa-bars text-white"></i>
-                            </button>
-                            <ul id="navbar_menu"  class="block absolute z-10 top-[-50rem] w-full bg-white shadow-xl shadow-stone-100  rounded-lg" >
-                                <li class="my-2  ps-3">
-                                    <a href="#" class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary">خانه</a>
-                                </li>
-                                <li class="my-2 ps-3">
-                                    <a href="#" class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary">درباه ما</a>
-                                </li>
-                                <li class="my-2 ps-3">
-                                    <a href="#" class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary">خدمات</a>
-                                </li>
-                                <li class="my-2 ps-3">
-                                    <a href="#" class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary">نمونه کار</a>
-                                </li>
-                                <li class="my-2 ps-3">
-                                    <a href="#" class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary">پکیج ها</a>
-                                </li>
-                                <li class="my-2 ps-3">
-                                    <a href="#" class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary">بلاگ</a>
-                                </li>
-                                <li class="my-2 ps-3">
-                                    <a href="#" class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary">تماس</a>
-                                </li>
-                            </ul>
-                        <img src="/public/assets/image/logo-1.png" alt="navbar-logo">
-                    </div>
-                </div>
-            </nav>
-        <!-- <<<< navbar section Responsive >>>> -->
+    <!-- <<<< navbar section Responsive >>>> -->
+    <nav
+      class="block lg:hidden static w-full bg-white h-full py-5 shadow-lg shadow-stone-300"
+    >
+      <div class="container">
+        <div class="flex justify-between items-center w relative px-2">
+          <button
+            id="navbar_btn"
+            class="w-10 h-10 bg-primary text-2xl rounded-lg"
+          >
+            <i id="navbar_icon" class="fa-solid fa-bars text-white"></i>
+          </button>
+          <ul
+            id="navbar_menu"
+            class="block absolute z-10 top-[-50rem] w-full sm:w-1/2 bg-white shadow-xl shadow-stone-100 rounded-lg"
+          >
+            <li class="my-2 ps-3">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary"
+                >خانه</a
+              >
+            </li>
+            <li class="my-2 ps-3">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary"
+                >درباه ما</a
+              >
+            </li>
+            <li class="my-2 ps-3">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary"
+                >خدمات</a
+              >
+            </li>
+            <li class="my-2 ps-3">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary"
+                >نمونه کار</a
+              >
+            </li>
+            <li class="my-2 ps-3">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary"
+                >پکیج ها</a
+              >
+            </li>
+            <li class="my-2 ps-3">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary"
+                >بلاگ</a
+              >
+            </li>
+            <li class="my-2 ps-3">
+              <a
+                href="#"
+                class="font-dana-bold text-xl font-extrabold ease-linear duration-200 hover:text-primary"
+                >تماس</a
+              >
+            </li>
+          </ul>
+          <img src="/public/assets/image/logo-1.png" alt="navbar-logo" />
+        </div>
+      </div>
+    </nav>
+    <!-- <<<< navbar section Responsive >>>> -->
 
+    <!-- <<<< Section Header >>>> -->
+    <section class="bg-slate-100 h-full mt-4 py-12">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 px-2 "
+        >
+          <div class="block w-full my-auto">
+            <h4 class="text-3xl text-primary">سلام وقت بخیر</h4>
+            <h2 class="text-4xl font-dana-bold font-extrabold mt-3">
+              من مارک پارکر هستم
+            </h2>
+            <p class="text-xl text-slate-700 mt-3">
+              من یک طراح و توسعه دهنده مستقل آزاد مستقر در تهران ، ایران هستم.
+              من در تلاش هستم تا از طریق کد دقیق و طراحی کاربر محور ، برنامه های
+              کاربردی وب همه جانبه و زیبا بسازم.
+            </p>
+            <button class="button-primary">نمونه کار های من</button>
+          </div>
+          <img src="/public/assets/image/header-hero.png" alt="image header" class="mx-auto">
+        </div>
+      </div>
+    </section>
+    <!-- <<<< Section Header >>>> -->
 
-        <!-- <<<<< file Link javascript >>>> -->
-        <script src="/js/app.js" type="module"></script>
-</body>
+    <!-- <<<<< file Link javascript >>>> -->
+    <script src="/js/app.js" type="module"></script>
+  </body>
 </html>
