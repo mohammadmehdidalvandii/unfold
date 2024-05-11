@@ -27,4 +27,15 @@
     .button-primary{
         @apply flex justify-center items-center bg-primary font-dana-bold font-extrabold text-xl text-white mt-5 py-2  px-3 rounded-2xl ease-linear duration-300 hover:bg-white hover:text-primary hover:border-2 border-primary;
     }
+
+    .title_content{
+        @apply block text-center w-full;
+    }
+
+    .title_content_title{
+        @apply block font-dana-black font-extrabold text-4xl;
+    }
+    .title_content_text{
+        @apply block font-dana-bold font-extrabold text-xl text-slate-400 mt-2;
+    }
 }
